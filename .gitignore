@@ -160,9 +160,15 @@ Thumbs.db
 .ruff_cache/
 
 # Project Specific ML/Data Ignores
-# Ignore datasets in data/ except the .gitkeep files
-data/**/*
-!data/**/.gitkeep
+# Ignore dataset contents in specific subfolders under data/
+data/raw/**/*
+data/interim/**/*
+data/processed/**/*
+data/external/**/*
+!data/raw/**/.gitkeep
+!data/interim/**/.gitkeep
+!data/processed/**/.gitkeep
+!data/external/**/.gitkeep
 
 # Ignore model checkpoints/weights in models/ except the .gitkeep files
 models/**/*
