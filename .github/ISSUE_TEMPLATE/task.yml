@@ -1,0 +1,52 @@
+name: 📋 Engineering Task
+description: Track a specific technical task or chore
+title: "[Task]: "
+labels: ["type:task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to define concrete technical tasks, refactoring, chores, or sub-tasks.
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: A clear explanation of what needs to be done.
+      placeholder: E.g., Implement the database connection pooling config...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How do we know this task is successfully completed? (Use markdown checkboxes)
+      placeholder: |
+        - [ ] Connection pool limits are configurable via env vars
+        - [ ] Connection timeouts are handled gracefully
+        - [ ] Added unit tests verifying connection recycling
+    validations:
+      required: true
+  - type: textarea
+    id: implementation-notes
+    attributes:
+      label: Implementation Notes
+      description: Specific technical design, modules to edit, or approaches to follow.
+      placeholder: E.g., refer to the DB design pattern in db.py...
+  - type: checkboxes
+    id: areas
+    attributes:
+      label: Affected Areas
+      description: Select all areas this task touches.
+      options:
+        - label: Platform / Core Architecture
+        - label: Data Pipelines / Ingestion
+        - label: Machine Learning / Computer Vision Models
+        - label: Backend Logic / APIs
+        - label: Frontend UI / UX
+        - label: Infrastructure / CI-CD / DevOps
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies / Blockers
+      description: Are there any PRs, other issues, or infrastructure blocks that this task depends on?
+      placeholder: E.g., blocked by #123

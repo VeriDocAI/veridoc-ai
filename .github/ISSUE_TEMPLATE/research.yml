@@ -1,0 +1,45 @@
+name: 🔍 Research / Spike
+description: Document an investigation, feasibility study, or technical spike
+title: "[Research]: "
+labels: ["type:research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for research activities, library evaluations, design spikes, or benchmarking tasks.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Research Objective
+      description: What is the main goal or question we want to answer with this research?
+      placeholder: E.g., Evaluate Tesseract vs EasyOCR performance on low-contrast documents.
+    validations:
+      required: true
+  - type: textarea
+    id: background
+    attributes:
+      label: Background & Context
+      description: Why are we doing this research? What problem context led to this spike?
+      placeholder: E.g., We are seeing high failure rates in OCR of receipt images...
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope of Work
+      description: What are the key tasks, experiments, or lines of inquiry?
+      placeholder: |
+        - [ ] Set up evaluation dataset
+        - [ ] Run benchmark for Tesseract
+        - [ ] Run benchmark for EasyOCR
+        - [ ] Compare latency and accuracy
+    validations:
+      required: true
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Expected Deliverables
+      description: What should be the output of this research? (e.g., spike report, architecture decision record, prototype branch)
+      placeholder: E.g., Architecture Decision Record (ADR) and benchmark dataset.
+    validations:
+      required: true
