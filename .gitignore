@@ -166,4 +166,5 @@ data/**/*
 
 # Ignore model checkpoints/weights in models/ except the .gitkeep files
 models/**/*
+!models/**/*.py
 !models/**/.gitkeep

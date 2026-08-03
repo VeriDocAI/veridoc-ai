@@ -19,4 +19,5 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "--cov=src --cov-report=term-missing"
+pythonpath = ["."]
+addopts = "--cov=apps --cov=services --cov=libs --cov=models --cov=training --cov-report=term-missing --cov-report=xml"

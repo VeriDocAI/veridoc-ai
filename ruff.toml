@@ -32,6 +32,13 @@ select = [
     "S",    # flake8-bandit (security scanning)
     "B",    # flake8-bugbear (common design issues)
     "C4",   # flake8-comprehensions
+    "A",    # flake8-builtins
+    "ARG",  # flake8-unused-arguments
+    "PTH",  # flake8-use-pathlib
+    "T20",  # flake8-print
+    "ERA",  # eradicate (commented-out code)
+    "PL",   # Pylint (refactor, convention, warning, error)
+    "RUF",  # Ruff-specific rules
 ]
 ignore = []
 
@@ -40,7 +47,7 @@ ignore = []
 
 [lint.isort]
 combine-as-imports = true
-known-first-party = ["src", "libs", "services"]
+known-first-party = ["libs", "services", "apps", "models", "training"]
 
 # Formatting Configuration
 [format]

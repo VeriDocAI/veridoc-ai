@@ -11,6 +11,7 @@ Build intelligent systems that understand, verify, reason over, and secure docum
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Active%20Development-orange)
+[![CI](https://github.com/VeriDocAI/veridoc-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/VeriDocAI/veridoc-ai/actions/workflows/ci.yml)
 
 </div>
 
