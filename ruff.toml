@@ -1,0 +1,50 @@
+# Target Python Version
+target-version = "py312"
+
+# Core Settings
+line-length = 100
+exclude = [
+    ".git",
+    ".git-rewrite",
+    ".ipynb_checkpoints",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "__pypackages__",
+    "_build",
+    "build",
+    "dist",
+    "node_modules",
+    "site-packages",
+    "venv",
+]
+
+# Linting Configuration
+[lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # Pyflakes
+    "I",    # isort (import sorting)
+    "UP",   # pyupgrade (python version upgrades)
+    "N",    # pep8-naming
+    "S",    # flake8-bandit (security scanning)
+    "B",    # flake8-bugbear (common design issues)
+    "C4",   # flake8-comprehensions
+]
+ignore = []
+
+[lint.per-file-ignores]
+"tests/*" = ["S101"] # Allow assert statements in test files
+
+[lint.isort]
+combine-as-imports = true
+known-first-party = ["src", "libs", "services"]
+
+# Formatting Configuration
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "lf"
