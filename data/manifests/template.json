@@ -1,0 +1,12 @@
+{
+  "name": "docvqa",
+  "version": "1.0.0",
+  "task": "document_understanding",
+  "license": "CC-BY-4.0",
+  "source": "https://rrc.cvc.uab.es/?ch=17",
+  "splits": {
+    "train": 10000,
+    "validation": 1000,
+    "test": 1000
+  }
+}

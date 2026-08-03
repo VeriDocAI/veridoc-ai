@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "DatasetManifest",
+  "description": "Standardized metadata schema for describing datasets in the VeriDoc AI platform.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the dataset."
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic versioning of the dataset format/content."
+    },
+    "task": {
+      "type": "string",
+      "description": "The primary ML task of the dataset (e.g. document_understanding, ocr, forgery_detection)."
+    },
+    "license": {
+      "type": "string",
+      "description": "The licensing term under which this dataset can be used."
+    },
+    "source": {
+      "type": "string",
+      "description": "Reference source URL or citation for the dataset."
+    },
+    "splits": {
+      "type": "object",
+      "description": "Size of data splits.",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    }
+  },
+  "required": ["name", "version", "task", "license", "source", "splits"]
+}
