@@ -22,7 +22,7 @@ A chronological register of architectural decision records detailing the context
 
 ### 🎯 [Product Vision & Roadmap](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/product/README.md)
 Platform roadmap, release logs, target audience definitions, and milestone checklists.
-*   **Key Document**: [Roadmap](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/product/roadmap.md) — Milestone roadmap.
+*   **Key Documents**: [Roadmap](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/product/roadmap.md) | [Sprint 1 Board](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/product/sprint_1_board.md)
 
 ### 🧪 [Research & Benchmarks](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/research/README.md)
 Exploratory research regarding Vision-Language Models (VLMs), OCR performance benchmarks, and fine-tuning experiments.

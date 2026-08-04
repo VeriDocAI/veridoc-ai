@@ -11,21 +11,23 @@ gantt
     title Release Timeline
     dateFormat  YYYY-MM
     section Sprint 0
-    Engineering Foundation :active, 2026-08, 2026-08
-    section Sprint 1+
-    Document OCR Service   :2026-08, 2026-09
-    Document Understanding :2026-09, 2026-10
-    Identity Verification  :2026-10, 2026-11
-    Financial Intelligence :2026-11, 2026-12
-    Image Forgery Detection :2026-12, 2027-01
+    Engineering Foundation :done, 2026-08, 2026-08
+    section Sprint 1
+    Baseline VLM Inference Platform :active, 2026-08, 2026-09
+    section Sprint 2+
+    Document OCR Service   :2026-09, 2026-10
+    Document Understanding :2026-10, 2026-11
+    Identity Verification  :2026-11, 2026-12
+    Financial Intelligence :2026-12, 2027-01
+    Image Forgery Detection :2027-01, 2027-02
 ```
 
 ### Milestone Release Summary
 
 | Version | Milestone Name | Focus & Primary Capabilities | Status |
 | :--- | :--- | :--- | :--- |
-| **v0.1** | Engineering Foundation | Developer environment, CI/CD, linting, testing, and ML tooling baseline. | **Active** |
-| **v0.2** | Document OCR Service | Local and cloud-based OCR engine integrations, layout parsing, and text extraction. | Planned |
+| **v0.1** | Engineering Foundation | Developer environment, CI/CD, linting, testing, and ML tooling baseline. | Completed |
+| **v0.2** | Baseline VLM Inference Platform | Establish the first end-to-end inference pipeline for a Vision-Language Model. | **Active** |
 | **v0.3** | Document Understanding | Vision-Language Model fine-tuning, retrieval-augmented generation (RAG) over docs. | Planned |
 | **v0.4** | Identity Verification | KYC assistance, ID card verification, and automatic classification. | Planned |
 | **v0.5** | Financial Intelligence | Parsing financial statements, balance sheets, and context-aware reasoning. | Planned |
@@ -34,32 +36,25 @@ gantt
 
 ---
 
-## 📍 Current Milestone: Release v0.1 — Engineering Foundation
+## 📍 Current Milestone: Release v0.2 — Baseline VLM Inference Platform (Sprint 1)
 
-### Completed Features
-*   **F0.1 Repository Foundation**: Modular multi-tier directory structure (`apps/`, `services/`, `libs/`, `models/`, `training/`).
-*   **F0.2 Project Management**: Standard issue templates (`bug.yml`, `feature.yml`, `task.yml`) and pull request guidelines.
-*   **F0.3 Development Environment**: Lockfile pinning and package management via `uv`.
-*   **F0.4 Code Quality**: Auto-formatting and checking with Ruff (configured in `ruff.toml`).
-*   **F0.5 CI/CD**: Automatic lint check and pytest suite running on GitHub Actions with README status badge.
-*   **F0.7 Documentation**: Created documentation structure, architecture overview, and development guide.
+For the detailed task backlog, estimates, and acceptance criteria, see the [Sprint 1 Board](file:///c:/Users/Mohmmed%20Aarif/projects/Ai%20ComputerVision/veridoc-ai/docs/product/sprint_1_board.md).
 
 ### In Progress Features
-*   **F0.6 ML Engineering Foundation**:
-    *   T0.6.1 Dataset Directory Structure
-    *   T0.6.3 Configuration Management
-    *   T0.6.5 Dataset Manifest Standard
-    *   T0.6.4 Evaluation Harness Scaffolding
-    *   T0.6.2 Experiment Management
+*   **F1.1 Model Evaluation & Selection**: Evaluate candidate VLMs, select baseline model, create Model Card, and define inference strategy.
+*   **F1.2 Baseline Inference Pipeline**: Implement model loader, build image processing, implement inference engine, and run memory optimization (quantization).
+*   **F1.3 API Layer**: Initialize FastAPI, implement prediction and health check endpoints with validation.
+*   **F1.4 Sprint Demo**: Deploy end-to-end VLM document understanding flow and write technical documentation.
 
 ---
 
-## 🔮 What Comes Next (Release v0.2 / Sprint 1)
+## 🏆 Completed Milestones
 
-### Feature F1.1 – Baseline Vision-Language Model
-The first end-to-end model development cycle:
-1.  **Baseline Selection**: Adopt `Qwen2.5-VL-3B-Instruct` as our starting Vision-Language Model.
-2.  **Training Pipeline**: Set up deep learning code using Hugging Face/PyTorch.
-3.  **Fine-Tuning**: Adapt the model to document layout parsing and extraction tasks.
-4.  **Evaluation**: Implement the v0.1 evaluation harness to measure metrics.
-5.  **Inference Serving**: Wrap the model using FastAPI to expose a production-ready HTTP endpoint.
+### Release v0.1 — Engineering Foundation
+*   **F0.1 Repository Foundation**: Modular multi-tier directory structure.
+*   **F0.2 Project Management**: Issue templates and PR guidelines.
+*   **F0.3 Development Environment**: Lockfile pinning via `uv`.
+*   **F0.4 Code Quality**: Auto-formatting and checking with Ruff.
+*   **F0.5 CI/CD**: Automatic lint check and pytest suite running on GitHub Actions.
+*   **F0.6 ML Engineering Foundation**: Dataset directory structure, configuration management, dataset manifest schema, evaluation harness scaffolding, and experiment management.
+*   **F0.7 Documentation**: Documentation structure, architecture overview, and development guide.
