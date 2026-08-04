@@ -42,6 +42,7 @@ gantt
 *   **F0.3 Development Environment**: Lockfile pinning and package management via `uv`.
 *   **F0.4 Code Quality**: Auto-formatting and checking with Ruff (configured in `ruff.toml`).
 *   **F0.5 CI/CD**: Automatic lint check and pytest suite running on GitHub Actions with README status badge.
+*   **F0.7 Documentation**: Created documentation structure, architecture overview, and development guide.
 
 ### In Progress Features
 *   **F0.6 ML Engineering Foundation**:
